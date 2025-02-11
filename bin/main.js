@@ -5,7 +5,7 @@ const { CallbackStack } = require('../lib/callback-stack');
 
 const app = new App();
 const stage = app.node.tryGetContext('stage') || 'dev';
-const region = app.node.tryGetContext('region') || 'us-east-1';
+const region = app.node.tryGetContext('region') || 'eu-central-1';
 const appName = app.node.tryGetContext('appName') || 'ccaas';
 
 new CallbackStack(app, 'CallbackStack', {

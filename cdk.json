@@ -1,5 +1,6 @@
 {
   "app": "node bin/main.js",
+  "profile": "exaprint",
   "watch": {
     "include": [
       "**"

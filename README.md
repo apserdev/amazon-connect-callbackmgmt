@@ -26,3 +26,6 @@ Desplegado en la cuenta de exaprint con los siguienes comandos:
 * cdk bootstrap --template bootstrap-template.yaml -c instance-id=356b6522-fee2-4e54-97d1-c84c9c6d2fd9 -c stream-name=callback_connect_dev aws://069688730681/eu-central-1
 * cdk deploy -c stage=dev -c instance-id=356b6522-fee2-4e54-97d1-c84c9c6d2fd9 -c stream-name=callback_connect_dev --profile exaprint
 
+Para actualizar, ejecutar estos dos comandos (teniendo un perfil AWS llamado exaprint):
+* cdk synth -c stage=dev -c instance-id=356b6522-fee2-4e54-97d1-c84c9c6d2fd9 -c stream-name=callback_connect_dev --profile exaprint 
+* cdk deploy -c stage=dev -c instance-id=356b6522-fee2-4e54-97d1-c84c9c6d2fd9 -c stream-name=callback_connect_dev --profile exaprint
